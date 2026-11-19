@@ -1,7 +1,7 @@
 import psutil
 import logging
 
-from app.models.network_utils_model import NetworkUtilsModel
+from fastapi_system_monitor.models.network_utils_model import NetworkUtilsModel
 from sqlmodel import select
 
 class SystemMetricsCollector:

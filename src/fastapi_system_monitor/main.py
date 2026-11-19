@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from contextlib import asynccontextmanager
 
-from app.core.database import create_db_and_tables
+from fastapi_system_monitor.core.database import create_db_and_tables
 
 PORT = 8000
 @asynccontextmanager

@@ -2,8 +2,8 @@ import datetime
 from sqlmodel import Field, SQLModel
 
 # Pydantic Schemas
-from app.schemas.memory_schema import MemorySchema
-from app.schemas.pc_interfaces import PcInterfaces
+from fastapi_system_monitor.schemas.memory_schema import MemorySchema
+from fastapi_system_monitor.schemas.pc_interfaces import PcInterfaces
 
 # SQLModel extends Pydantic's BaseModel
 class NetworkUtilsModel(SQLModel, table=True):
