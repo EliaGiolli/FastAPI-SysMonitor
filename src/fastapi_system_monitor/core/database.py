@@ -2,7 +2,10 @@ from typing import Annotated
 from fastapi import Depends
 from sqlmodel import create_engine, Session, SQLModel
 
-engine = create_engine('sqlite:///sysmonitor.db', echo=False)
+from fastapi_system_monitor.models import metrics
+
+
+engine = create_engine('sqlite:///prova.db', echo=True)
 
 def create_db_and_tables():
     SQLModel.metadata.create_all(engine)
