@@ -1,6 +1,8 @@
 import psutil
 import logging
 
+from app.models.network_utils_model import NetworkUtilsModel
+from sqlmodel import select
 
 class SystemMetricsCollector:
     """Responsabile esclusivamente della raccolta delle metriche dal sistema operativo."""
