@@ -1,7 +1,7 @@
 import psutil
 import logging
 
-from fastapi_system_monitor.models.network_utils_model import NetworkUtilsModel
+from fastapi_system_monitor.models.metrics import SystemSnapshot, NetworkInterfaceStat
 from sqlmodel import select
 
 class SystemMetricsCollector:
